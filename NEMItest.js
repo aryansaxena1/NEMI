@@ -50,7 +50,7 @@ timeline.push({
 /** TIMELINE VARIABLES **/
 /************************/
 
-/*
+
 var matrixList = [
 {name: 'RAPM-01', pattern: 'RAPM/1_k.png', option_01: 'RAPM/1_1.png', option_02: 'RAPM/1_2.png', option_03: 'RAPM/1_3.png', option_04: 'RAPM/1_4.png', option_05: 'RAPM/1_5.png', option_06: 'RAPM/1_6.png', option_07: 'RAPM/1_7.png', option_08: 'RAPM/1_8.png', correct:4},
 {name: 'RAPM-02', pattern: 'RAPM/2_k.png', option_01: 'RAPM/2_1.png', option_02: 'RAPM/2_2.png', option_03: 'RAPM/2_3.png', option_04: 'RAPM/2_4.png', option_05: 'RAPM/2_5.png', option_06: 'RAPM/2_6.png', option_07: 'RAPM/2_7.png', option_08: 'RAPM/2_8.png', correct:3},
@@ -99,7 +99,7 @@ var img_preload = [
 ];
 
 var audio_preload = ['audio/testPodcast.mp3','audio/audioOneBanjo.mp3','audio/audioTwoFearless.mp3','audio/audioThreeBatman.mp3'];
-*/
+
 var debrief_preload = ['images/debrief1.png'];
 var ncsTest_preload = ['images/ncsTest.png'];
 
@@ -119,7 +119,7 @@ timeline.push(welcome);
 /**   DEMOGRAPHICS     **/
 /************************/
 
-//                                        TRIAL DEMO 
+/* NEW DEMOGRAPHIC CODE  
 var demograph2 = {
 	type: 'survey-text-2',
     questions: [
@@ -142,12 +142,12 @@ var demograph2 = {
     ]
 }
 timeline.push(demograph2); 
+*/
 
 
 
 
 
-/*
 var demo_form = {
     type: 'survey-html-form',
     preamble: '<p> Please enter your details </p>',
@@ -239,16 +239,16 @@ var demo_form = {
 }
 
 timeline.push(demo_form);
-*/
+
 /************************/
 /**  NEED4COGNITION    **/
 /************************/
-/*
+
 var ncsTesting = {
     timeline
 }
-*/
-/*
+
+
 var scale_ncs = [1,2,3,4,5,6,7,8,9];
 
 
@@ -349,7 +349,7 @@ var ncsLikert = {
     ]
 }
 timeline.push(ncsLikert);
-*/
+
 
 
 
@@ -357,7 +357,7 @@ timeline.push(ncsLikert);
 /**     PODCASTS   **/
 /********************/
 
-/*********************************************SAMPLE audio*/
+// SAMPLE audio
 
 /*
 var nextTestPodcast = {
@@ -386,7 +386,7 @@ timeline.push(nextRealPodcasts);
 
 
 /*********************************************AUDIO 1*/
-/*
+
 var realPodcastOne = {
     type:'audio-button-response',
     stimulus:'audio/audioOneBanjo.mp3',
@@ -400,7 +400,7 @@ timeline.push(realPodcastOne);
 
 
 /***************************************nas1*/
-/*
+
 var scale_nas = [-3,-2,-1,0,1,2,3];
 
 var nasLikertOne = {
@@ -457,7 +457,7 @@ timeline.push(nasLikertOne);
 
 
 /*********************************************AUDIO 2*/
-/*
+
 var realPodcastTwo = {
     type:'audio-button-response',
     stimulus:'audio/audioTwoFearless.mp3',
@@ -471,7 +471,7 @@ timeline.push(realPodcastTwo);
 
 
 /***************************************nas2*/
-/*
+
 var scale_nas = [-3,-2,-1,0,1,2,3];
 
 var nasLikertTwo = {
@@ -527,7 +527,7 @@ var nasLikertTwo = {
 timeline.push(nasLikertTwo);
 
 /*********************************************AUDIO 3*/
-/*
+
 var realPodcastThree = {
     type:'audio-button-response',
     stimulus:'audio/audioThreeBatman.mp3',
@@ -542,15 +542,15 @@ timeline.push(realPodcastThree);
 
 /***************************************nas3*/
 
-/*
+
 var nextNasOne = {
 	type: 'html-button-response',
 	stimulus: '<p><b>You will now be asked to complete the narrative absorption scale (NAS).</b> </p><p>Please make sure you scroll up and down to make sure you have completed each question.</p><p>When you are ready please click the button below.  </p>',
 	choices: ['BEGIN']		  
 }
 timeline.push(nextNasOne);
-*/
-/*
+
+
 var scale_nas = [-3,-2,-1,0,1,2,3];
 
 var nasLikertThree = {
@@ -612,19 +612,19 @@ var finishPodcasts = {
     choices: ['NEXT']		  
 }
 timeline.push(finishPodcasts); 
-*/
+
 
 
 /************************/
 /**     PSIQ LIKERT     **/
 /************************/
-/*var nextPsi = {
+var nextPsi = {
 	type: 'html-button-response',
 	stimulus: '<h2>You will now be asked to complete the Plymouth Sensory Imagery Questionnaire (PSI-Q).</b></p><p>Please make sure you scroll to the top and bottom to make sure you have completed each question.</p><p>When you are ready please click the button below.  </p>',
 	choices: ['BEGIN']		  
 }
-timeline.push(nextPsi);*/
-/*
+timeline.push(nextPsi);
+
 var scale_PSI = [0,1,2,3,4,5,6,7,8,9,10];
 
 var PSI_likert = {
@@ -701,14 +701,14 @@ timeline.push(PSI_likert)
 /************************/
 /**     SUIS LIKERT     **/
 /************************/
-/*var nextSuis = {
+var nextSuis = {
 	type: 'html-button-response',
 	stimulus: '<p><b>You will now be asked to complete the Plymouth Sensory Imagery Questionnaire (PSI-Q). </b></p><p>Please make sure you scroll to the top and bottom to make sure you have completed each question.</p><p>When you are ready please click the button below.  </p>',
 	choices: ['BEGIN']		  
 }
-timeline.push(nextPsi);*/
+timeline.push(nextPsi);
 
-/*
+
 var scale_SUIS = [1,2,3,4,5];
 
 var SUIS_likert = {
@@ -733,13 +733,13 @@ var SUIS_likert = {
 }
 
 timeline.push(SUIS_likert)
-*/
+
 
 
 /**************************/
 /** MAIN RESPONSE SCREEN **/
 /**************************/
-/*
+
 var instructions = {
 	type: 'html-button-response',
 	stimulus: '<p><b>Matrix Reasoning Task</b></p><p>This is a pattern completion task. You will be presented with patterns, one pattern at a time.'+
@@ -796,9 +796,9 @@ var rapm_proc = {
 };
 
 timeline.push(rapm_proc); //push the procedure to the timeline
-*/
 
 
+//debrief form
 var debrief = {
     type: 'image-button-response',
     stimulus: 'images/debrief1.png',
@@ -827,7 +827,7 @@ timeline.push({
   fullscreen_mode: false
 });
 
-/*
+
 //final feedback screen
 var matrixFinish = {
     type: "html-button-response",
@@ -839,18 +839,18 @@ var matrixFinish = {
     };
       
 timeline.push(matrixFinish);
-*/
-//debrief form
+
+//debrief form 
 
 
 
 //initialize the experiment
      jsPsych.init({
         timeline: timeline,
-		//preload_images: img_preload,
+		preload_images: img_preload,
 		preload_images: debrief_preload,
-	    preload_images: ncsTest_preload,
-	    //preload_audio: audio_preload,
+	    	preload_images: ncsTest_preload,
+	    	preload_audio: audio_preload,
 		show_progress_bar:true
       });
 	  
